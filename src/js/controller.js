@@ -136,6 +136,11 @@ const controlAddRecipe = async function (newRecipe) {
     location.reload();
   }, 1500);
 };
+
+const newFeature = function () {
+  console.log('welcome to the application');
+};
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -144,6 +149,7 @@ const init = function () {
   searchView.addHandleSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 init();
 
