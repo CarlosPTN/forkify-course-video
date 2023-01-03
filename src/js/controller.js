@@ -148,6 +148,7 @@ const init = function () {
 };
 init();
 
+//Just to trigger a new deployement
 const clearBookmarks = function () {
   localStorage.clear('bookmarks');
 };
